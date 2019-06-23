@@ -1,1 +1,5 @@
-INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Виктор ', 'Будейко', 'Семенович', 'Управляющий', '1', '80000000000', 'hghg@uu.ru');
+INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Виктор ', 'Будейко', 'Семенович', 'Управляющий', '1', '80000000000;+79999999999', 'hghg@uu.ru;hghg@uu.ru;hghg@uu.ru;');
+INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Иван ', 'Иванов', 'Петрович', 'Бухгалтер', '2', '80000000000', 'test@uu.ru');
+INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Сергей ', 'Смирнов', 'Сергеевич', 'Директор', '3', '80000000000', 'test@uu.ru');
+INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Дмитрий ', 'Петров', 'Алексеевич', 'Разработчик', '2', '80000000000;89999999999', 'test@uu.ru');
+INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Владимир ', 'Лисичкин', 'Семенович', 'Курьер', '1', '80000000000', 'test@uu.ru');
