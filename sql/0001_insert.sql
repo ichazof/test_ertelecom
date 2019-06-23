@@ -1,0 +1,1 @@
+INSERT INTO `workers` (`id`, `name`, `surname`, `name2`, `title`, `type`, `phones`, `emails`) VALUES (NULL, 'Виктор ', 'Будейко', 'Семенович', 'Управляющий', '1', '80000000000', 'hghg@uu.ru');

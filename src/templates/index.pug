@@ -1,0 +1,19 @@
+doctype html
+html
+  include includes/head.pug
+  body(class='body')
+    include includes/form.pug   
+
+
+
+    main
+      h1 Сотрудники
+      div(class="employees js-table")
+        .employees__row
+          .employees__cell(class="employees__head") Сотрудник
+          .employees__cell(class="employees__head") Телефон
+          .employees__cell(class="employees__head") Электронная почта
+          .employees__cell(class="employees__head") 
+         
+    .button(class="button_yellow js-button-add") Добавить
+  script(src='../js/bundle.js')

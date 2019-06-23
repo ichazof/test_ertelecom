@@ -1,0 +1,168 @@
+.form {
+    border: 1px solid black;
+    font-family: $main-font;
+    position: fixed;
+    display: none;
+    background-color: #FFF;
+
+    &__wrapper {
+        display: flex;
+        padding: 10px;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    &__fields-wrapper {
+        display: flex;
+        padding: 10px;
+        align-items: baseline;
+    }
+
+    &__label {
+        display: block;
+        color: #7d7d7d;
+        font-size: 8px;
+        padding-bottom: 3px;
+
+    }
+
+    &__input {
+        padding: 5px;
+        width: 180px;
+
+        &-contacts {
+            // display: inline-b;
+            margin: 5px 0;
+        }
+    }
+
+    &__input-wrapper {
+        padding: 10px;
+    }
+
+    &__person {
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    &__work-type {
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__contacts {
+        padding: 10px;
+
+    }
+
+    &__contacts-delete {
+        background-image: url(../img/basket.png);
+        background-repeat: no-repeat;
+        padding: 20px;
+        background-position-y: center;
+        background-position-x: right;
+        background-size: 20px;
+        cursor: pointer;
+    }
+
+    &__contacts-wrapper {
+        display: flex;
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__emails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__add {
+        background-image: url(../img/plus.png);
+        padding: 15px;
+        background-size: 20px;
+        padding-left: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position-y: center;
+        opacity: .4;
+        transition: 1s;
+        font-size: 12px;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    &__radio-label {
+        position: relative;
+        padding: 10px;
+
+    }
+
+    &__radio-text {
+        position: relative;
+        padding: 0 0 0 35px;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 22px;
+            height: 22px;
+            border: 1px solid #CDD1DA;
+            border-radius: 50%;
+            background: #FFF;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 4px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #9FD468;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
+            opacity: 0;
+            transition: .2s;
+
+        }
+    }
+
+    &__input-radio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        margin: 10px 0 0 7px;
+
+        &:checked+.form__radio-text:after {
+            opacity: 1;
+        }
+
+        &:focus+.form__radio-text:before {
+            box-shadow: 0 0 0 3px rgba(255, 255, 0, .7);
+        }
+    }
+
+    &__buttons {
+        display: inline;
+    }
+
+    
+
+    input {
+
+        &:focus {
+            outline-color: #7d7d7d;
+        }
+    }
+
+}

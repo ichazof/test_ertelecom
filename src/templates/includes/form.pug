@@ -1,0 +1,49 @@
+.form(class="js-form")
+  .form__header Новый сотрудник
+  form(class="form__wrapper" id="workers_form")
+    .form__fields-wrapper
+      .form__person
+        .form__input-wrapper
+          label(class="form__label") Фамилия
+          input(class="form__input" name="surname")
+        .form__input-wrapper
+          label(class="form__label") Имя
+          input(class="form__input" name="name")
+        .form__input-wrapper
+          label(class="form__label") Отчество
+          input(class="form__input" name="name2")
+
+      .form__work-type
+        .form__input-wrapper
+          label(class="form__label") Должность
+          input(class="form__input" name="title")
+          div
+            label(class="form__radio-label")
+              input(type="radio" class="form__input-radio" name="type" value="1" checked="checked")
+              .form__radio-text ЛПР
+            label(class="form__radio-label")
+              input(type="radio" class="form__input-radio" name="type" value="2")
+              .form__radio-text Технический представитель
+            label(class="form__radio-label")
+              input(type="radio" class="form__input-radio" name="type" value="3")
+              .form__radio-text Представитель по расчетам
+      .form__contacts
+        .form__phones(data-count="1")
+          label(class="form__label") Телефоны
+          .form__contacts-wrapper
+            input(type="tel" class="form__input form__input-contacts" name="phone")
+            //- .form__contacts-delete
+          .form__add(class="js-add-phone") Добавить телефон
+        .form__emails(data-count="1")
+          label(class="form__label") Почта
+          .form__contacts-wrapper
+            input(type="email" placeholder="email" class="form__input" id="email"  name="mail")
+            //- .form__contacts-delete
+          .form__add(class="js-add-mail") Добавить Почту
+
+    .form__buttons
+
+      input(type="button" class="button_grey js-button-cancel" value="Отменить")
+
+      input(type="submit" class="button_yellow js-button-save" value="Сохранить")
+

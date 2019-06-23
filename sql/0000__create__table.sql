@@ -1,0 +1,11 @@
+CREATE TABLE `workers`
+( `id` INT
+(10) NOT NULL AUTO_INCREMENT , `name` VARCHAR
+(30) NOT NULL , `surname` VARCHAR
+(30) NOT NULL , `name2` VARCHAR
+(30) NOT NULL , `title` VARCHAR
+(200) NOT NULL , `type` VARCHAR
+(200) NOT NULL , `phones` VARCHAR
+(200) NOT NULL , `emails` VARCHAR
+(200) NOT NULL , PRIMARY KEY
+(`id`)) ENGINE = InnoDB;
